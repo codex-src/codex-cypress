@@ -6,6 +6,3 @@
 
 # Yarn
 yarn-error.log
-
-# Cypress
-/cypress/integration/examples
