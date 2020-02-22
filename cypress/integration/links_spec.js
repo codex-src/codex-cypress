@@ -1,30 +1,30 @@
-it("Can open the home page", () => {
+it("can open home", () => {
 	cy.visit("http://localhost:3000/")
-		.get("[data-e2e='home']")
+	cy.get("[data-e2e='home']")
 		.click()
 		.url()
 		.should("eq", "http://localhost:3000/")
 })
 
-it("Can open the demo page", () => {
+it("can open demo", () => {
 	cy.visit("http://localhost:3000/")
-		.get("[data-e2e='demo']")
+	cy.get("[data-e2e='demo']")
 		.click()
 		.url()
 		.should("eq", "http://localhost:3000/demo")
 })
 
-it("Can open the demo page via the call-to-action button", () => {
+it("can open demo via cta button", () => {
 	cy.visit("http://localhost:3000/")
-		.get("[data-e2e='cta-button']")
+	cy.get("[data-e2e='cta-button']")
 		.click()
 		.url()
 		.should("eq", "http://localhost:3000/demo")
 })
 
-it("Can open the demo page via the call-to-action editor", () => {
+it("can open demo via cta editor", () => {
 	cy.visit("http://localhost:3000/")
-		.get("[data-e2e='cta-editor']")
+	cy.get("[data-e2e='cta-editor']")
 		.click()
 		.url()
 		.should("eq", "http://localhost:3000/demo")

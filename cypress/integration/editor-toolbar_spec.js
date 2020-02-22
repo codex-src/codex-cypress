@@ -1,6 +1,6 @@
 const regexAnyText = /.+/
 
-it("Can click the toolbar buttons", () => {
+it("can click the toolbar buttons", () => {
 	cy.visit("http://localhost:3000/demo")
 	cy.get("[data-e2e='editor-toolbar-button-1']")
 		.click({ force: true }) // NOTE: disabled=true
