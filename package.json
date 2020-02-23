@@ -4,6 +4,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "cypress": "^4.0.2",
+    "emoji-trie": "https://github.com/codex-src/emoji-trie",
     "eslint": "^6.8.0"
   }
 }
