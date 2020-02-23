@@ -1,3 +1,9 @@
+// https://github.com/cypress-io/cypress/issues/927#issuecomment-345337856
+Cypress.Commands.overwrite("type",
+	(fn, subject, string, options) => {
+	return fn(subject, string, { ...options, delay: 0 })
+})
+
 Cypress.Commands.add("expects", {
 	prevSubject: "element",
 }, (subject, data, opts) => {
